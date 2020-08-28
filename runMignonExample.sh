@@ -24,6 +24,13 @@ Thank you for trying MIGNON!
 
 EOF
 
+# check commands 
+for i in curl gzip docker java
+do
+  command -v ${i} >/dev/null || echo "WARNING: ${i} not found!"
+done
+
+
 # exit when any command fails
 set -e
 
