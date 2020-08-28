@@ -113,7 +113,7 @@ if [ ! -f "genome.fa" ]; then
     echo "========================"
     echo "Decompressing genome..."
     echo "========================"    
-    gzip -kd genome.fa.gz
+    gzip -d genome.fa.gz
 fi
 
 if [ ! -f "Homo_sapiens.GRCh38.99.chr.gtf" ]; then
@@ -121,7 +121,7 @@ if [ ! -f "Homo_sapiens.GRCh38.99.chr.gtf" ]; then
     echo "========================"
     echo "Decompressing genome annotation..."
     echo "========================"
-    gzip -kd Homo_sapiens.GRCh38.99.chr.gtf.gz
+    gzip -d Homo_sapiens.GRCh38.99.chr.gtf.gz
 fi
 
 if [ ! -d "vepCache" ]; then 
